@@ -1,0 +1,359 @@
+/* ----------------------------------------------------------------------
+Forms
+-------------------------------------------------------------------------*/
+
+form {
+    .btn {
+        padding: 12px 14px;
+    }
+}
+
+
+.form-control,
+input,
+select {
+    border-radius: 0;
+    box-shadow: none;
+    line-height: 18px;
+    padding: 10px 16px;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    transition: all .3s ease;
+    font-size: 1rem;
+    &:focus {
+        background-color: $background-light;
+        border-color: $color-theme;
+        box-shadow: none;
+    }
+    &.form-control-lg {
+        line-height: 22px;
+        padding: 18px 20px;
+        font-size: 1.2rem;
+    }
+    &.form-control-sm {
+        line-height: 14px;
+        padding: 8px 12px;
+        font-size: .8rem;
+    }
+    &.input-lg {
+        resize: none;
+        font-size: 1.2rem;
+
+     
+    }
+
+    &.rounded {
+        border-radius: 4px;
+    }
+}
+
+.input-group-append {
+
+    .btn,
+    button {
+        border-radius: 0 $button-border-radius $button-border-radius 0;
+        height: 40px;
+
+        i {
+            margin-right: 0px;
+        }
+    }
+}
+
+.input-group-prepend {
+
+    .btn,
+    button {
+        border-radius: $button-border-radius 0 0 $button-border-radius;
+
+        i {
+            margin-right: 0px;
+        }
+    }
+
+}
+
+.input-group-lg {
+    .btn {
+        padding: 16px 20px;
+        font-size: 14px;
+    }
+}
+
+.input-group-text {
+    border: 0;
+}
+
+.input-group-text i {
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label:not(.error) {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: $color-dark;
+}
+
+
+
+.form-inline button {
+    margin: 0px;
+}
+
+.form-group>label {
+    display: block;
+}
+
+.has-feedback label~.form-control-feedback {
+    top: 44px;
+}
+
+.form-gray-fields .form-control {
+    background-color: rgba($light, .6);
+    border-color: transparent;
+    color: #333;
+
+    &:focus {
+        background-color: #eee;
+    }
+}
+
+.form-transparent-fields .form-control {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.4);
+
+    &:focus {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+.form-transparent-light-fields .form-control {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+label.error {
+    color: #b71828;
+    display: none !important;
+    font-weight: 400;
+}
+
+.form-control.error,
+.sm-form-control.error {
+    border-color: #b71828;
+}
+
+.form-control {
+    &.error {
+        color: #b71828;
+    }
+    &::-moz-placeholder,
+    &::-ms-input-placeholder,
+    &::-webkit-input-placeholder {
+        color: #bbbbbb;
+    }
+}
+
+
+input[type="color"] {
+    width: 100%;
+    height: 100%;
+    min-height: 3px;
+    padding: 0;
+    border: 0px;
+    cursor: pointer;
+    &:focus {
+        box-shadow: none;
+    }
+
+}
+
+
+
+/*form select*/
+
+select.form-control:not([size]):not([multiple]) {
+    height: 40px;
+}
+
+select {
+    width: 100%;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    background-image: url(../images/dropdown-arrow.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+}
+
+
+
+
+
+
+select[multiple] {
+    background-image: none;
+}
+
+.order-select {
+    >h6 {
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+.button-search {
+    background-color: #fff;
+    border-color: #e9e9e9 #e9e9e9 #e9e9e9;
+    border-style: solid;
+    border-width: 1px 1px 1px 0 !important;
+    box-shadow: none;
+    margin-left: -6px !important;
+    z-index: 2 !important;
+}
+
+/* ----------------------------------------------------------------------
+ Reservation form
+-------------------------------------------------------------------------*/
+
+.reservation-form-over {
+    top: -80px;
+    z-index: 10;
+    margin-bottom: -80px;
+    overflow: inherit;
+}
+
+.reservation-form {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    min-height: 160px;
+    padding: 30px;
+    position: relative;
+    z-index: 9999 !important;
+
+    label {
+        color: #555;
+    }
+
+    input,
+    select {
+        border: 0px;
+        border-radius: 4px;
+        background-color: $color-white;
+        border: $form-border-width solid $form-border-color;
+        width: 100%;
+    }
+
+    .date input {
+        border-radius: 4px 0 0 4px;
+        border-width: 2px 0 2px 2px;
+    }
+
+    .input-group-addon {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        background-color: #fff !important;
+        border-color: #ddd;
+        border-image: none;
+        border-style: solid;
+        border-width: 2px 2px 2px 0;
+    }
+
+    input,
+    select {
+        color: #555;
+        display: block;
+        font-size: 15px;
+        line-height: 1.42857;
+        padding: 8px 14px;
+        width: 100%;
+    }
+}
+
+/*reservation form style 2*/
+
+#book {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 10px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    padding: 40px;
+
+    label {
+        color: #fff;
+    }
+
+    .date input {
+        border-radius: 4px 0 0 4px;
+    }
+
+    input,
+    select {
+        color: #555;
+        display: block;
+        font-size: 15px;
+        line-height: 1.42857;
+        padding: 8px 14px;
+        width: 100%;
+    }
+
+    .input-group-addon {
+        background-color: #fff !important;
+        border: 0 none;
+    }
+
+    input,
+    select {
+        border: 0 none;
+    }
+}
+
+
+/* Fixes */
+.widget .input-group-text {
+    height: 40px;
+}
+
+.list-group input[type="radio"] {
+    display: none;
+}
+
+.list-group input[type="radio"]+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group input[type="radio"]:checked+.list-group-item {
+    background-color: $background-light;
+}
+
+
+/* ----------------------------------------------------------------------
+Forms - Dark
+-------------------------------------------------------------------------*/
+
+.dark {
+
+    .form-control,
+    input,
+    select {
+        background-color: #222;
+        border-color: #333;
+    }
+}

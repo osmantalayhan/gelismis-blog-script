@@ -1,0 +1,12 @@
+#mainMenu nav > ul > li > a {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600; }
+#mainMenu nav > ul > li .dropdown-menu > li > a,
+#mainMenu nav > ul > li .dropdown-menu > li > span,
+#mainMenu nav > ul > li .dropdown-menu > li [class*="col-"] > ul > li > a {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: 400; }
+
+/*# sourceMappingURL=fonts.css.map */

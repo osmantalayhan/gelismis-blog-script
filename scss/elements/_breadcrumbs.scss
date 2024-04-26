@@ -1,0 +1,34 @@
+ /* ----------------------------------------------------------------------
+    Breadcrumbs
+-------------------------------------------------------------------------*/
+ .breadcrumb {
+     background-color: transparent;
+     font-size: 12px;
+     font-weight: 400;
+     letter-spacing: 0.5px;
+     margin-bottom: 10px;
+     display: block;
+     ul,
+     ol {
+         display: inline;
+         margin: 0;
+         padding: 0;
+         li {
+             display: inline;
+             position: relative;
+             opacity: .8;
+             +li:before {
+                 content: "\e95a";
+                 font-family: $font-icon;
+                 margin: 0 5px;
+                 background-color: transparent;
+             }
+             &:hover,
+             &.active,
+             &:last-child {
+                 opacity: 1;
+             }
+
+         }
+     }
+ }

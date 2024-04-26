@@ -1,0 +1,215 @@
+$color-white: #fff;
+$light-grey: #eee;
+#page-content {
+    padding: 40px 0 40px 0;
+
+    /*  > .container > .row {
+        display: block !important;
+    } */
+}
+
+.page-content-shadow {
+    box-shadow: 0 82px 53px 10px rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------------------------------------------
+     Content
+---------------------------------------------------------*/
+
+#page-content:not(.no-sidebar) {
+    > .container,
+    > .container-wide,
+    > .container-fluid {
+        > .row {
+            flex-direction: row-reverse;
+        }
+    }
+    &.sidebar-right {
+        > .container,
+        > .container-wide,
+        > .container-fluid {
+            > .row {
+                flex-direction: row;
+            }
+        }
+    }
+
+
+    &.sidebar-both {
+        > .container,
+        > .container-wide,
+        > .container-fluid {
+            > .row {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+#content {
+    overflow: hidden;
+    padding: 60px 0;
+    position: relative;
+    .container,
+    .container-wide,
+    .container-fluid {
+        position: relative;
+    }
+}
+
+// Content
+.content {
+    padding-left: 25px;
+    margin-bottom: 26px;
+}
+
+
+// Sidebar
+.sidebar {
+    padding-right: 25px;
+    &.sidebar-modern {
+        &:before {
+            background-color:$sidebar-background;
+            width: 100%;
+            content: "";
+            position: absolute;
+            z-index: -10;
+            bottom: -10px;
+            left: -4px;
+            top: -20px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.sidebar-right {
+    .content {
+        padding-left: 15px;
+        padding-right: 25px;
+    }
+    .sidebar {
+        padding-right: 15px;
+        border-right-width: 0;
+        padding-left: 25px;
+        &:before {
+            left: 4px;
+        }
+    }
+}
+
+.sidebar-both {
+    .content {
+        padding-left: 25px;
+        padding-right: 25px;
+        + .sidebar {
+            padding-right: 15px;
+            border-right-width: 0;
+            padding-left: 25px;
+            &:before {
+                right: auto;
+                border-right-width: 0;
+                border-left-width: 1px;
+                left: 0;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+    #page-content:not(.no-sidebar) {
+
+        &.sidebar-both {
+            > .container,
+            > .container-wide,
+            > .container-fluid {
+                > .row {
+                    .content {
+                        order: -1;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .content,
+    .sidebar {
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sidebar-right .sidebar,
+    .sidebar-right .content,
+    .sidebar-both .content,
+    .sidebar-both .content + .sidebar {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .sidebar-both .sidebar,
+    .sidebar-right .sidebar,
+    .sidebar {
+        &:before {
+            right: 0;
+            border-right-width: 0;
+            border-left-width: 0;
+            left: 0;
+        }
+        .widgets {
+            float: left;
+        }
+    }
+
+    .sidebar-both {
+        .content {
+            + .sidebar {
+                border-right-width: 0;
+                &:before {
+                    border-right-width: 0;
+                    border-left-width: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:991px) {
+    #page-content {
+        padding: 20px 0 20px 0;
+    }
+}
+
+
+/*--------------------------------------------------------
+    Dashboard
+---------------------------------------------------------*/
+
+.dashboard {
+    #page-content {
+        background-color: $background-light;
+        padding: 0 !important;
+    }
+    .sidebar {
+        background-color: $background-white;
+        padding-top: 30px;
+        padding-right: 30px;
+        box-shadow: 5px 0 20px -5px rgba(0, 0, 0, .1);
+        &:before {
+
+            background: $background-white;
+            ;
+            position: fixed;
+            width: 30px;
+            height: 100%;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    .content {
+        padding: 30px 50px;
+
+    }
+}

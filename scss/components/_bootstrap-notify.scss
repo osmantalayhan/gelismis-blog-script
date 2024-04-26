@@ -1,0 +1,9 @@
+
+.alert [data-notify="progressbar"] {
+    height: 6px !important;
+    margin-top: 8px;
+}
+.progress .progress-bar {
+	height: 4px;
+    background-color: lighten($background-success, 10%);   
+}

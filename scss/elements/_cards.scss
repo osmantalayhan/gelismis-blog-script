@@ -1,0 +1,90 @@
+/* ----------------------------------------------------------------
+	Cards
+-----------------------------------------------------------------*/
+
+.card {
+	border-radius: $border-radius;
+	transition: $transition-base;
+	.card-title {
+		font-family: $font-headings;
+	}
+	&:not(.card-static):hover {
+		box-shadow: $box-shadow;
+	}
+}
+ 
+/* 
+
+.card {
+    
+	display: block;
+width: calc(100% + 30px);
+left: -15px;
+position: relative;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center; 
+
+.card-body {
+	.icon-holder {
+		 vertical-align: middle;
+		 top: -4px;
+		 height: 40px;
+		 width: 40px;
+		 background: rgba(0, 0, 0, .04);
+		 display: inline-block;
+		 line-height: 40px;
+		 text-align: center;
+		 border-radius: 4px;
+		 font-size: 24px;
+		 transition: .3s;
+		 position: relative;
+		 position: absolute;
+		 top: 50%;
+		 transform: translateY(-50%)
+	}
+
+	.icon-class {
+		 max-width: 80%;
+		 display: inline-block;
+		 overflow: hidden;
+		 font-size: 14px;
+		 line-height: 20px;
+		 top: 0;
+		 vertical-align: middle;
+		 padding-left: 55px
+	}
+
+}
+
+.row > .col-md-3 {
+	position: relative;
+	font-size: 20px;
+	margin: 12px 12px;
+	background-color: #fff;
+	box-shadow: $box-shadow;
+	border-radius: $border-radius;
+	flex: 1 1 calc(25% - 30px);
+	align-content: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	padding: 26px 18px;
+	transition: .3s;
+	color: $color-master;
+
+	&:hover {
+		 transform: translateY(-5px);
+		 background-color: $background-theme;   
+		 color: $color-white;
+		 box-shadow: $box-shadow;
+		 .icon-holder {
+			  background-color: $background-white;
+			  color: $color-master;
+		 }
+	}
+
+}
+
+} */

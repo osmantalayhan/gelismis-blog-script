@@ -1,0 +1,25 @@
+#mainMenu {
+    nav {
+        >ul {
+            >li {
+                >a {
+                    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .dropdown-menu {
+                    >li {
+
+                        >a,
+                        >span,
+                        [class*="col-"]>ul>li>a {
+                            font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+                            font-size: 13px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

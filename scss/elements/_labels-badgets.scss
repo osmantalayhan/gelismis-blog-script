@@ -1,0 +1,14 @@
+/* ----------------------------------------------------------------
+Lables & Badgets
+-----------------------------------------------------------------*/
+.badge {
+    font-family: $font-paragraph;
+    font-weight: 600;
+}
+.badge-pill {
+    padding: 0.4em .8em;
+    border-radius: 10rem;
+}
+.badge-primary {
+    background-color: $color-theme;   
+}

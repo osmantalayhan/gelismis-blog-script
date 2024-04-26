@@ -1,0 +1,195 @@
+/* ----------------------------------------------------------------
+    Google Fonts
+-----------------------------------------------------------------*/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600';
+@import 'https://fonts.googleapis.com/css?family=Poppins:100,200,400,500,600,700,800';
+@import 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800';
+
+
+/* ----------------------------------------------------------------------
+	Base Colors
+-------------------------------------------------------------------------*/
+
+/*Colors*/
+$color-master:                  #626262 !default;
+
+$color-theme:                   #2250fc; // #0127ff
+$color-body:                     #565656;
+
+$color-primary:                  $color-theme;  
+$color-secondary:                #5A6268;
+$color-success:                  #81c868;
+$color-info:                     #53b0f8;  
+$color-warning:                  #ffb20e;
+$color-danger:                   #f33e5b;
+
+$color-complete:                  #0127ff;
+
+$color-white:                    #ffffff; 
+$color-black:                    #000000;
+$color-grey:                     #cecece;
+
+
+// Lighter colors
+$color-light:					#999999; 
+$color-lighter:		lighten($color-light, 1.4%);
+$color-lightest:	lighten($color-light, 3.5%);
+
+// Darker colors 
+$color-dark:					#444;
+$color-dark:mix($color-master, #000, 45%) !default;
+$color-darker:mix($color-master, #000, 27%) !default;
+$color-darkest:mix($color-master, #000, 18%) !default;
+
+
+
+ 
+$grey:                           #F7F9FB;
+$dark:                           #1f1f1f; 
+$darker:                         #292929;
+$dark-light:                     #bbbbbb;
+$light:                          #eeeeee;
+$dark-grey:                      #262626;
+$slate-grey:                     #444444; 
+$silver:                         #cccccc;
+
+  
+$paragraph-color:                #777777;
+
+/*Background colors*/
+$background-light:                  #f6f9fa; 
+$background-dark:                  #333;
+$background-white:                  #fff;
+$background-black:                  #111;
+$background-theme:                  $color-theme;
+$background-grey:                 #F7F9FB;
+
+
+$background-primary:                  $color-theme;  
+$background-secondary:                $color-secondary;
+$background-success:                  $color-success;
+$background-info:                    $color-info;
+$background-warning:                  $color-warning;
+$background-danger:                  $color-danger;
+
+ 
+  
+/*Typography*/
+$font-body:				        'Nunito', 'Helvetica', 'Arial', sans-serif;
+$font-headings:			        'Poppins', 'Helvetica', 'Arial', sans-serif;
+$font-paragraph:			    'Open Sans', 'Helvetica', 'Arial', sans-serif;
+
+
+$font-menu:				        'Poppins', 'Helvetica', 'Arial', sans-serif;
+$font-menu-dropdown:		    'Poppins', 'Helvetica', 'Arial', sans-serif;
+
+
+
+
+
+
+$font-icon:						"inspiro-icons";
+
+$font-family-1:                  'Poppins', 'Helvetica', 'Arial', sans-serif;
+
+$font-family-1:                  'Open Sans', 'Helvetica', 'Arial', sans-serif;
+$font-family-2:                  'Poppins', 'Helvetica', 'Arial', sans-serif;
+$font-family-3:                  'Poppins', 'Helvetica', 'Arial', sans-serif;
+$font-family-4:                  'Poppins', 'Helvetica', 'Arial', sans-serif;
+$font-family-5:                  'Nunito', 'Helvetica', 'Arial', sans-serif;
+$font-family-6:                  'Poppins', 'Helvetica', 'Arial', sans-serif;
+$font-family-7:                  'Poppins';
+
+
+/*Font*/
+$font-size:                      13px;  
+
+
+
+
+
+$font-weight:                    300;
+
+ 
+ 
+
+/*Header*/
+$header-height:                  80px;
+$header-line-height:             80px; 
+ 
+ 
+/*Side Panel*/ 
+$side-panel-width:                  300px; 
+$side-panel-width-collapsed:        80px; 
+
+
+/*Page Titile*/
+$page-title-font:                   'Poppins', 'Helvetica', 'Arial', sans-serif;
+$page-title-background:              #f8f9fa;
+
+
+$sidebar-background:                 #f8f9fa;
+
+
+$footer-background:                  #f8f9fa;
+
+
+
+/*Margins*/
+$default-margin:                    14px;
+
+/*Transitions*/
+$transition-ease:                   all 0.3s ease;
+ 
+
+//utilities
+$border-width:                      1px;
+$border-color:                      #ececec;
+$border-color-dark:                 #2b2b2b;
+$border-radius:                     5px;
+
+
+$border-background-color:            $color-secondary;
+
+
+$font-size-icon:					24px;
+ 
+
+//Buttons
+$button-border-radius:				$border-radius;
+
+//Forms
+
+$form-background-color:				$color-lightest;
+$form-border-width:                      $border-width;
+$form-border-color:                     $border-color;
+$form-border-radius:				$border-radius;
+
+
+// Define common padding and border radius sizes and more.
+
+$hover-color:                 $color-theme;
+$active-color:                $color-theme;
+$active-bg-color:             $grey; 
+
+
+$box-shadow:                  0 6px 38px rgba(0, 0, 0, 0.05);
+
+$line-height-lg:              1.5 !default;
+$line-height-sm:              1.5 !default;
+
+$border-width:                1px !default;
+$border-color:                $border-color !default;
+
+$border-radius:               5px !default;
+$border-radius-lg:            8px !default;
+$border-radius-sm:            10px !default;
+
+$transition-base:             all .2s ease !default;
+$transition-fade:             opacity .15s linear !default;
+
+
+
+
+
+ 
